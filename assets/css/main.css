@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    text-decoration: none;
+    list-style: none;
+    transition: .5s;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1596px;
+    width: 100%;
+}
+
+@font-face {
+    font-family: "Manrope-Bold";
+    src: url(../fonts/Manrope-Bold.ttf);
+    font-weight: 800;
+}
+
+@font-face {
+    font-family: "Manrope-Regular";
+    src: url(../fonts/Manrope-Regular.ttf);
+    font-weight: 500;
+}
+
+body {
+    font-family: "Manrope-Regular";
+}
+
+.banner-headlines,
+.catalog-headlines,
+.reviews-headlines,
+.faq-headlines,
+.about-headlines,
+.exp-headlines {
+    font-family: "Manrope-Bold";
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.none-dekstop {
+    display: none;
+}
+
+
+@media only screen and (min-width: 1280px) and (max-width:1596px) {
+
+    .container {
+        max-width: 1440px;
+    }
+
+    .banner-button__shop {
+        font-size: 14px;
+    }
+}

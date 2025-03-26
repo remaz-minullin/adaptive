@@ -1,0 +1,222 @@
+.banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 100px;
+    gap: 80px;
+}
+
+.left-box {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.banner-content__top {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.banner-headlines {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.banner-title__main {
+    font-size: 48px;
+    line-height: 100%;
+    color: black;
+    width: 77%;
+}
+
+.banner-title__second {
+    font-size: 18px;
+    color: #98989A;
+}
+
+.banner-desc {
+    font-size: 18px;
+    font-weight: 400;
+    color: #656567;
+}
+
+.banner-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 26px;
+}
+
+.banner-button__shop {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 18px 43px;
+    background-color: #FFD400;
+    border-radius: 32px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #262626;
+    line-height: 150%;
+}
+
+.banner-button__contact {
+    padding: 18px 43px;
+    border: 1px solid #F1F1F3;
+    border-radius: 32px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #262626;
+    line-height: 150%;
+}
+
+/* advanteges */
+
+.advanteges-content {
+    margin-top: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background-color: #F7F7F8;
+    border: 2px solid #FFFFFF;
+    height: 46%;
+    flex-wrap: wrap;
+    padding: 20px;
+    border-radius: 12px;
+    gap: 20px;
+}
+
+.advanteges-card {
+    width: 40%;
+    height: 41%;
+    background-color: #FFFFFF;
+    border: 1px solid #F1F1F3;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 30px;
+}
+
+.advanteges-card {
+    .title {
+        font-size: 34px;
+        line-height: 100%;
+        font-weight: 600;
+        color: #1A1A1A;
+        text-transform: uppercase;
+    }
+
+    .desc {
+        font-weight: 400;
+        font-size: 18px;
+        color: #656567;
+        line-height: 150%;
+    }
+}
+
+
+@media only screen and (min-width: 1280px) and (max-width:1596px) {
+
+    .banner-title__main {
+        font-size: 38px;
+    }
+
+    .banner-title__second {
+        font-size: 14px;
+    }
+
+    .banner-desc {
+        font-size: 16px;
+    }
+
+    .advanteges-card {
+        width: 37%;
+
+        .title {
+            font-size: 26px;
+        }
+
+        .desc {
+            font-size: 16px;
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1279px) {
+    .banner {
+        flex-wrap: wrap;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .banner-title__main {
+        font-size: 34px;
+    }
+
+    .advanteges-card {
+        width: 37%;
+    }
+
+}
+
+@media only screen and (max-width: 767px) {
+    .banner {
+        flex-wrap: wrap;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .banner .right-box img {
+        width: 500px;
+    }
+
+    .banner-content__top {
+        position: relative;
+    }
+
+    .banner-title__main {
+        font-size: 28px;
+    }
+
+    .banner-title__second {
+        font-size: 14px;
+        position: absolute;
+        top: -30px;
+        left: 0;
+    }
+
+    .banner-desc {
+        font-size: 14px;
+    }
+
+    .banner-button__shop {
+        padding: 14px 66px;
+        font-size: 14px;
+    }
+
+    .banner-button__contact {
+        padding: 14px 66px;
+        font-size: 14px;
+    }
+
+    .advanteges-card {
+        width: 33%;
+
+        .title {
+            font-size: 20px;
+        }
+
+        .desc {
+            font-size: 14px;
+        }
+    }
+}

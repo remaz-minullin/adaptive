@@ -1,0 +1,399 @@
+.catalog {
+    margin-top: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 80px;
+}
+
+.left-box {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 36px;
+}
+
+.catalog-content__top {
+    display: flex;
+    align-items: center;
+    gap: 150px;
+}
+
+.catalog-headlines {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 7px;
+}
+
+.catalog-title__main {
+    font-size: 48px;
+    line-height: 100%;
+    color: black;
+    width: 100%;
+}
+
+.catalog-title__second {
+    font-size: 18px;
+    color: #98989A;
+}
+
+.catalog-desc {
+    font-size: 18px;
+    font-weight: 400;
+    color: #656567;
+    width: 80%;
+}
+
+.right-box .banner-button__shop {
+    padding: 18px 30px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 150%;
+    width: 80%;
+}
+
+.catalog-nav {
+    border-top: 1px solid #F1F1F3;
+    border-bottom: 1px solid #F1F1F3;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 44px 0px;
+    gap: 40px;
+}
+
+.categories__first {
+    font-size: 20px;
+    font-weight: 500;
+    color: #98989A;
+    line-height: 100%;
+    text-transform: uppercase;
+}
+
+.catalog-nav .categories__first:hover {
+    font-weight: 600;
+    color: #1A1A1A;
+}
+
+.categories__second {
+    padding: 14px 24px;
+    color: #262626;
+    border: 1px solid #F1F1F3;
+    border-radius: 32px;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 150%;
+}
+
+.categories__second:hover {
+    background-color: #262626;
+    color: white;
+}
+
+
+/* card */
+.catalog-content {
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.catalog-card {
+    width: 23%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.cover {
+    position: relative;
+}
+
+.cover .clothes {
+    width: 100%;
+}
+
+.position {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+
+.catalog-card {
+    .title {
+        margin-top: 30px;
+        font-weight: 600;
+        color: #262626;
+        font-size: 20px;
+        line-height: 150%;
+    }
+
+    .price {
+        margin-top: 6px;
+        font-size: 18px;
+        color: #4C4C4D;
+        font-weight: 500;
+        line-height: 150%;
+    }
+}
+
+.catalog-content__bottom {
+    .right-box {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+}
+
+@media only screen and (min-width: 1280px) and (max-width:1596px) {
+
+    .catalog-title__main {
+        font-size: 38px;
+    }
+
+    .catalog-title__second {
+        font-size: 14px;
+    }
+
+    .catalog-desc {
+        font-size: 16px;
+    }
+
+    .left-box {
+        width: 70%;
+    }
+
+    .catalog-content__top {
+        .banner-button__shop {
+            padding: 14px 20px;
+            font-size: 14px;
+        }
+    }
+
+    .catalog-nav a {
+        font-size: 16px;
+    }
+
+    .catalog-card {
+
+        p {
+            font-size: 16px;
+        }
+    }
+
+    .catalog-content__bottom {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 100px;
+
+        .left-box {
+            position: relative;
+        }
+    }
+
+    .scroll {
+        height: 5px;
+        width: 1000px;
+        background: #E4E4E7;
+        overflow-x: scroll;
+    }
+
+    .scroll-black {
+        background-color: #262626;
+        height: 5px;
+        width: 246px;
+        bottom: 0px;
+        left: 50px;
+        position: absolute;
+    }
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1279px) {
+    .catalog-title__main {
+        font-size: 34px;
+    }
+
+    .catalog {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .left-box {
+        width: 80%;
+    }
+
+    .catalog-content__top {
+        flex-direction: column;
+        align-items: center;
+
+        .banner-button__shop {
+            padding: 14px 20px;
+            font-size: 14px;
+        }
+    }
+
+    .catalog-nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .catalog-nav a {
+        font-size: 16px;
+    }
+
+    .catalog-content {
+        width: 80%;
+    }
+
+    .catalog-card {
+        width: 40%;
+
+        p {
+            font-size: 16px;
+        }
+    }
+
+    .catalog-content__bottom {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 100px;
+
+        .left-box {
+            position: relative;
+        }
+    }
+
+    .scroll {
+        height: 5px;
+        width: 500px;
+        background: #E4E4E7;
+        overflow-x: scroll;
+    }
+
+    .scroll-black {
+        background-color: #262626;
+        height: 5px;
+        width: 246px;
+        bottom: 0px;
+        left: 50px;
+        position: absolute;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+
+    .none_mobile {
+        display: none;
+    }
+
+    .catalog-title__main {
+        font-size: 28px;
+    }
+
+    .catalog-content__top {
+        position: relative;
+    }
+
+    .catalog-title__second {
+        font-size: 14px;
+        position: absolute;
+        top: -20px;
+    }
+
+    .catalog-desc {
+        font-size: 14px;
+    }
+
+    .catalog {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .left-box {
+        width: 80%;
+    }
+
+    .catalog-content__top {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+
+        .right-box {
+            margin-right: 50%;
+        }
+
+        .banner-button__shop {
+            padding: 14px 20px;
+            font-size: 14px;
+            
+        }
+
+    }
+
+    .catalog-nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .catalog-nav a {
+        font-size: 16px;
+    }
+
+    .catalog-content {
+        width: 80%;
+    }
+
+    .catalog-card {
+        width: 100%;
+
+        p {
+            font-size: 16px;
+        }
+
+        .price {
+            position: relative;
+        }
+    }
+
+
+    .catalog-content__bottom {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 100px;
+
+        .left-box {
+            position: relative;
+        }
+
+        .right-box {
+            position: absolute;
+            right: 10%;
+            margin-bottom: 240px;
+        }
+    }
+
+    .scroll {
+        height: 5px;
+        width: 358px;
+        background: #E4E4E7;
+        overflow-x: scroll;
+    }
+
+    .scroll-black {
+        background-color: #262626;
+        height: 5px;
+        width: 46px;
+        bottom: 0px;
+        left: 150px;
+        position: absolute;
+    }
+}

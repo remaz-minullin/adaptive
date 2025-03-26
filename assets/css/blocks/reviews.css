@@ -1,0 +1,271 @@
+.reviews {
+    margin-top: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 80px;
+}
+
+.left-box {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 36px;
+}
+
+.reviews-content__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.reviews-headlines {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 7px;
+}
+
+.reviews-title__main {
+    font-size: 48px;
+    line-height: 100%;
+    color: black;
+    width: 100%;
+}
+
+.reviews-title__second {
+    font-size: 18px;
+    color: #98989A;
+}
+
+.reviews-desc {
+    font-size: 18px;
+    font-weight: 400;
+    color: #656567;
+    width: 80%;
+}
+
+.right-box .banner-button__shop {
+    padding: 18px 30px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 150%;
+    width: 80%;
+}
+
+/* card */
+.reviews-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    border: 1px solid #F7F7F8;
+    background-color: #FCFCFD;
+    width: 100%;
+    border-radius: 20px;
+    padding: 30px;
+    position: relative;
+}
+
+.position-first {
+    position: absolute;
+    left: 0;
+}
+
+.position-second {
+    position: absolute;
+    right: 0;
+}
+
+.review-card {
+    padding: 50px;
+    width: 24%;
+    gap: 24px;
+    border-radius: 20px;
+    border: 1px solid #F1F1F3;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.review-card {
+    .top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 40px;
+        width: 100%;
+    }
+
+    .desc {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 150%;
+        width: 100%;
+    }
+}
+
+.left-box__card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.user-name {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.name {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 150%;
+    width: 100%;
+}
+
+@media only screen and (min-width: 1280px) and (max-width:1596px) {
+    .reviews-title__main {
+        font-size: 38px;
+    }
+
+    .reviews-title__second {
+        font-size: 14px;
+    }
+
+    .reviews-desc {
+        font-size: 16px;
+    }
+
+    .reviews-content {
+        gap: 20px;
+    }
+
+    .review-card {
+        width: 22%;
+
+        .user img {
+            height: 50px;
+            width: 50px;
+        }
+
+        .name {
+            font-size: 16px;
+        }
+
+        .review-star img {
+            height: 16px;
+        }
+
+        .right-box img {
+            width: 40px;
+            height: 40px;
+        }
+
+        .desc {
+            font-size: 16px;
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1279px) {
+    .reviews {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .reviews-content__top {
+        flex-direction: column;
+        align-items: center;
+        gap: 80px;
+    }
+
+    .none {
+        display: none;
+    }
+
+    .reviews-content {
+        width: 80%;
+    }
+
+    .review-card {
+        width: 100%;
+        position: relative;
+    }
+
+    .position-first {
+        position: absolute;
+        bottom: -70px;
+        left: 40%;
+    }
+
+    .position-second {
+        position: absolute;
+        bottom: -70px;
+        right: 40%;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .reviews {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .reviews-content__top {
+        position: relative;
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+
+        .right-box {
+            margin-right: 40%;
+        }
+    }
+
+    .reviews-title__main {
+        font-size: 28px;
+    }
+
+    .reviews-title__second {
+        font-size: 14px;
+        position: absolute;
+        top: -20px;
+    }
+
+
+    .none {
+        display: none;
+    }
+
+    .reviews-content {
+        width: 80%;
+    }
+
+    .review-card {
+        width: 100%;
+        position: relative;
+    }
+
+    .position-first {
+        position: absolute;
+        bottom: -70px;
+        left: 35%;
+    }
+
+    .position-second {
+        position: absolute;
+        bottom: -70px;
+        right: 35%;
+    }
+}

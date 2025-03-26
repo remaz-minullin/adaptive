@@ -1,0 +1,244 @@
+.faq {
+    margin-top: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 80px;
+}
+
+.left-box {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 36px;
+}
+
+.faq-content__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.faq-headlines {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 7px;
+
+}
+
+.faq-title__main {
+    font-size: 48px;
+    line-height: 100%;
+    color: black;
+    width: 100%;
+}
+
+.faq-title__second {
+    font-size: 18px;
+    color: #98989A;
+}
+
+.faq-desc {
+    font-size: 18px;
+    font-weight: 400;
+    color: #656567;
+    width: 95%;
+}
+
+.faq-nav {
+    border-top: 1px solid #F1F1F3;
+    border-bottom: 1px solid #F1F1F3;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 44px 0px;
+    gap: 40px;
+}
+
+.categories__first {
+    font-size: 20px;
+    font-weight: 500;
+    color: #98989A;
+    line-height: 100%;
+    text-transform: uppercase;
+}
+
+.faq-nav .categories__first:hover {
+    font-weight: 600;
+    color: #1A1A1A;
+}
+
+
+/* main */
+.faq-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.faq_column {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.faq-item {
+    border: 1px solid #F1F1F3;
+    border-radius: 16px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    max-width: 512px;
+}
+
+.faq-question {
+    background-color: transparent;
+    padding: 30px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.faq-question::after {
+    content: '+';
+    font-size: 30px;
+    transition: transform 0.3s ease, content 0.3s ease;
+}
+
+.faq-question.open {
+    background-color: #FCFCFD;
+}
+
+.faq-question.open::after {
+    transform: rotate(45deg);
+}
+
+.faq-answer {
+    padding: 0 30px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease, padding 0.3s ease;
+}
+
+.faq-answer.open {
+    padding: 30px;
+    max-height: 200px;
+    background-color: #FCFCFD;
+}
+
+@media only screen and (min-width: 1280px) and (max-width:1596px) {
+    .faq-title__main {
+        font-size: 38px;
+    }
+
+    .faq-title__second {
+        font-size: 14px;
+    }
+
+    .faq-desc {
+        font-size: 16px;
+    }
+
+    .faq-nav a {
+        font-size: 16px;
+    }
+
+    .faq-question {
+        font-size: 16px;
+    }
+
+    .faq-answer {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1279px)  {
+    .faq {
+        flex-direction: column;
+        align-items: center;
+        padding: 0 40px;
+    }
+
+    .faq-content__top {
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+    }
+
+    .faq-title__main {
+        font-size: 28px;
+    }
+
+    .faq-title__second {
+        font-size: 14px;
+    }
+
+    .faq-desc {
+        font-size: 16px;
+    }
+
+    .faq-nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .faq-content {
+        display: grid;
+    }
+
+    .faq-item {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .faq {
+        flex-direction: column;
+        align-items: center;
+        padding: 0 40px;
+    }
+
+    .faq-content__top {
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+    }
+
+    .faq-title__main {
+        font-size: 28px;
+    }
+
+    .faq-title__second {
+        font-size: 14px;
+        position: absolute;
+        top: -20px;
+    }
+
+    .faq-desc {
+        font-size: 16px;
+    }
+
+    .faq-nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .faq-content {
+        display: flex;
+    }
+
+    .faq-item {
+        width: 100%;
+    }
+
+    .none {
+        display: none;
+    }
+}
